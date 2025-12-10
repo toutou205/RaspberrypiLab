@@ -19,5 +19,6 @@ Below is a list of projects we are currently working on or have completed:
   - **中文**: 一个基于 Web 的实时仪表盘，用于监控和控制树莓派 Sense HAT 传感器数据，并支持 3D 模型实时同步。
   - **English**: A web-based real-time dashboard for monitoring and controlling Raspberry Pi Sense HAT sensor data, with support for real-time 3D model synchronization.
   ![alt text](image-1.png)
+  ![Image](https://github.com/user-attachments/assets/c0f1b46d-fe87-4998-92de-02d72137f999)
 
 ---
