@@ -73,9 +73,9 @@ class SenseHatController:
                 humidity = 50 + 10 * math.cos(t / 5)
                 pressure = 1013 + 2 * math.sin(t / 2)
                 altitude = 44330 * (1 - (pressure / self.SEA_LEVEL_PRESSURE) ** (1 / 5.255))
-                pitch = 15 * math.sin(t)
-                roll = 20 * math.cos(t)
-                yaw = (t * 10) % 360
+                pitch = 15 * math.sin(t * 0.8)
+                roll = 20 * math.cos(t * 0.5)
+                yaw = (t * 15) % 360
 
             # 2. 更新 LED
             self._draw_leds(pitch, roll, yaw)
