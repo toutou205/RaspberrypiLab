@@ -10,7 +10,7 @@ from src.web.routes import configure_routes
 from src.web.socket_handler import configure_socket_handlers
 
 # 初始化Flask App和SocketIO
-app = Flask(__name__, template_folder='../web_client/templates', static_folder='../web_client/static')
+app = Flask(__name__, template_folder='web_client/templates', static_folder='web_client/static')
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
 
