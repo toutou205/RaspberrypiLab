@@ -39,8 +39,8 @@ def create_app() -> tuple[SocketIO, Flask]:
     print("Initializing application components...")
     app = Flask(
         __name__,
-        template_folder="../web_client/templates",
-        static_folder="../web_client/static",
+        template_folder="web_client/templates",
+        static_folder="web_client/static",
     )
     app.config["SECRET_KEY"] = config.SECRET_KEY
     socketio = SocketIO(app)

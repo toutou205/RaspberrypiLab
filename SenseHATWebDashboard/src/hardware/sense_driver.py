@@ -98,7 +98,7 @@ class SenseHatWrapper:
             o = self.sense.get_orientation_degrees()
             # Normalize pitch and roll to -180 to 180 degrees
             p = (o["pitch"] + 180) % 360 - 180
-            r = (r["roll"] + 180) % 360 - 180
+            r = (o["roll"] + 180) % 360 - 180
             return {"pitch": p, "roll": r, "yaw": o["yaw"] % 360}
 
         # Return dynamic mock data for orientation
