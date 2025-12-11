@@ -8,7 +8,7 @@ This project is a real-time environment and attitude monitoring system based on 
 **中文**:  
 该项目是一个基于 Raspberry Pi 和 Sense HAT 的实时环境与姿态监控系统。它通过一个 Web 仪表盘展示来自 Sense HAT 的传感器数据，包括温度、湿度、气压、姿态角以及计算出的海拔高度。用户可以通过网页实时查看数据，并控制是否将这些数据记录到本地 CSV 文件中。同时，它也支持通过物理摇杆切换 LED 矩阵的显示模式。
 
-!Dashboard Preview
+  ![Image](https://github.com/user-attachments/assets/c0f1b46d-fe87-4998-92de-02d72137f999)
 
 ## ✨ Key Features / 主要功能
 
