@@ -73,6 +73,7 @@ class LEDDisplay:
 
         # If mode has changed, clear the screen once before drawing the new mode
         if mode != self._last_mode_id:
+            time.sleep(0.8)  # Brief pause to avoid visual glitches
             self._sense.clear()
             self._last_mode_id = mode
 
