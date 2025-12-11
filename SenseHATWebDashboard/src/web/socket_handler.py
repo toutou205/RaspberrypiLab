@@ -18,7 +18,7 @@ def configure_socket_handlers(socketio: SocketIO, logger: DataLogger) -> None:
     """
 
     @socketio.on("toggle_recording")
-    def handle_toggle_recording(data: dict) -> None:
+    def handle_toggle_recording(data: dict = None) -> None:
         """Handles the 'toggle_recording' event from the client.
 
         Starts or stops the data logger based on its current state. After
