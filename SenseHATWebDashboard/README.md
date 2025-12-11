@@ -1,22 +1,46 @@
+# 🍓 Sense HAT Web Dashboard / Sense HAT 网页仪表盘
 
-# Sense HAT Web Dashboard
+## 📖 Description / 项目描述
 
-## 描述
+**English**:  
+This project is a real-time environment and attitude monitoring system based on Raspberry Pi and Sense HAT. It displays sensor data from the Sense HAT via a web dashboard, including temperature, humidity, pressure, attitude angles, and calculated altitude. Users can view data in real-time via a web page and control whether to log this data to a local CSV file. It also supports switching LED matrix display modes via the physical joystick.
 
+**中文**:  
 该项目是一个基于 Raspberry Pi 和 Sense HAT 的实时环境与姿态监控系统。它通过一个 Web 仪表盘展示来自 Sense HAT 的传感器数据，包括温度、湿度、气压、姿态角以及计算出的海拔高度。用户可以通过网页实时查看数据，并控制是否将这些数据记录到本地 CSV 文件中。同时，它也支持通过物理摇杆切换 LED 矩阵的显示模式。
 
-## 主要功能
+!Dashboard Preview
 
-- **实时数据监控**: 通过 WebSockets 将传感器数据实时推送到前端仪表盘。
-- **环境数据显示**:
-  - 温度 (Temperature), 湿度 (Humidity), 气压 (Pressure), 海拔高度 (Altitude)。
-- **姿态数据显示 (IMU)**: 俯仰角 (Pitch), 横滚角 (Roll), 航向角 (Yaw)。
-- **数据记录**: 用户可以通过网页上的开关控制数据的记录，数据以 CSV 格式保存在 `recordings` 目录下。
-- **多模式 LED 反馈**: Sense HAT 上的 8x8 LED 矩阵可通过物理摇杆切换多种显示模式（如监控、水平仪、彩虹、火焰等）。
-- **Web 界面**: 使用 Flask 和 Socket.IO 构建后端，前端采用 HTML, Bootstrap 5, 和 JavaScript 实现。
-- **模拟模式**: 在没有 Sense HAT 硬件的环境下也能运行，并生成模拟数据用于调试。
+## ✨ Key Features / 主要功能
 
-## 文件结构
+- 📊 **Real-time Monitoring / 实时监控**  
+  Push sensor data to the dashboard in real-time via WebSockets.  
+  通过 WebSockets 将传感器数据实时推送到前端仪表盘。
+
+- 🌡️ **Environment Data / 环境数据**  
+  Temperature, Humidity, Pressure, Altitude.  
+  温度、湿度、气压、海拔高度。
+
+- 🧭 **IMU Data / 姿态数据**  
+  Pitch, Roll, Yaw.  
+  俯仰角、横滚角、航向角。
+
+- 💾 **Data Logging / 数据记录**  
+  Control data recording via the web interface. Data is saved as CSV in the `logs` directory.  
+  用户可以通过网页控制数据记录，数据以 CSV 格式保存在 `logs` 目录下。
+
+- 💡 **Multi-mode LED / 多模式 LED**  
+  Switch between various display modes (Monitor, Spirit Level, Rainbow, Fire) using the physical joystick.  
+  通过物理摇杆切换多种显示模式（如监控、水平仪、彩虹、火焰等）。
+
+- 🌐 **Web Interface / Web 界面**  
+  Built with Flask & Socket.IO (Backend) and HTML/Bootstrap 5 (Frontend).  
+  使用 Flask 和 Socket.IO 构建后端，前端采用 HTML, Bootstrap 5 和 JavaScript 实现。
+
+- 🛠️ **Mock Mode / 模拟模式**  
+  Runs without hardware by generating simulated data for debugging.  
+  在没有 Sense HAT 硬件的环境下也能运行，并生成模拟数据用于调试。
+
+## 📂 File Structure / 文件结构
 
 ```text
 SenseHATWebDashboard/
