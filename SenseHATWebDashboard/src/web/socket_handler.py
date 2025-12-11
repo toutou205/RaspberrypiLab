@@ -3,7 +3,7 @@
 
 from flask_socketio import SocketIO, emit
 
-from ..core.logger import DataLogger
+from src.core.logger import DataLogger
 
 
 def configure_socket_handlers(socketio: SocketIO, logger: DataLogger) -> None:
